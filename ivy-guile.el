@@ -16,8 +16,8 @@
          (response-list-cleaned (mapcar #'ivy-geiser-get-symbol response-list)))
     response-list-cleaned))
 
-(defun ivy-describe-guile-symbol ()
-  "Describe any Common Lisp spec symbol"
+(defun ivy-guile-describe-symbol ()
+  "Describe any Guile symbol"
   (interactive)
   (ivy-read "Describe Guile symbol: "
             (ivy-geiser-completion)

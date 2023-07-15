@@ -16,7 +16,7 @@
          (response-list-cleaned (mapcar #'ivy-geiser-get-symbol response-list)))
     response-list-cleaned))
 
-(defun ivy-select-guile-symbol ()
+(defun ivy-describe-guile-symbol ()
   "Describe any Common Lisp spec symbol"
   (interactive)
   (ivy-read "Describe Guile symbol: "
@@ -24,10 +24,7 @@
             :history 'ivy-describe-guile-symbol-history
             :require-match t
             :action (lambda (symbol-string)
-                      (funcall 'geiser-doc-symbol (make-symbol symbol-string)))
+                      (geiser-doc-symbol (make-symbol symbol-string)))
             :caller 'ivy-describe-common-lisp--spec-symbol))
-
-(message "Searching...")
-(ivy-select-guile-symbol)
 
 (provide 'ivy-guile)

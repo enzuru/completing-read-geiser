@@ -4,12 +4,10 @@
 ;; SPDX-License-Identifier: GPL-3.0
 
 (defun ivy-geiser-get-symbol (unparsed-string)
-  (interactive)
   (string-match "\\(?:^\\|[^:]:\\)[[:space:]]+\\([^[:space:]]+\\)" unparsed-string)
   (match-string 1 unparsed-string))
 
 (defun ivy-geiser-completion ()
-  (interactive)
   (let* ((response-alist (geiser-eval--send/wait `(apropos ".*")))
          (response-string (cdr (assoc 'output response-alist)))
          (response-list (butlast (split-string response-string "\n")))

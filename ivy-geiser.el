@@ -2,7 +2,7 @@
 
 ;; Copyright (C) enzu.ru
 
-;; Homepage: https://enzu.ru
+;; Homepage: https://github.com/enzuru/ivy-geiser
 ;; Keywords: lisp matching tools
 
 ;; Package-Version: 1.0.0

@@ -10,7 +10,7 @@ I run the completion query using `(apropos ".*")`. If I need to do something els
 
 ```
 (straight-use-package
- '(ivy-guile
+ '(ivy-geiser
    :type git
    :host github
    :repo "enzuru/ivy-geiser"))

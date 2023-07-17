@@ -28,8 +28,8 @@
   (let* ((response-alist (geiser-eval--send/wait `(apropos ".*")))
          (response-string (cdr (assoc 'output response-alist)))
          (response-list (butlast (split-string response-string "\n")))
-         (response-list-cleaned (mapcar #'ivy-geiser-get-symbol response-list)))
-    response-list-cleaned))
+         (response-list-parsed (mapcar #'ivy-geiser-get-symbol response-list)))
+    response-list-parsed))
 
 (defun ivy-geiser-describe-symbol ()
   "Describe any Geiser symbol."

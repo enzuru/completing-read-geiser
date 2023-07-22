@@ -12,7 +12,7 @@
 
 ;;; Commentary:
 
-;; completing-read provides a list of symbols available in your Geiser session
+;; completing-read-geiser provides a list of symbols available in your Geiser session
 
 ;;; Code:
 

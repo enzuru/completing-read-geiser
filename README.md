@@ -1,4 +1,4 @@
-# completing-read support for Geiser
+# completing-read-geiser
 
 This is a simple package that provides `completing-read` for Geiser symbols. When a symbol is selected, a definition of the symbol is shown using Geiser.
 

@@ -1,6 +1,6 @@
 # completing-read support for Geiser
 
-This is a simple package that provides compelting-read for Geiser symbols. When a symbol is select, a definition of the symbol using Geiser.
+This is a simple package that provides `completing-read` for Geiser symbols. When a symbol is selected, a definition of the symbol is shown using Geiser.
 
 Use the completion framework of your choice, whether (ivy)[https://github.com/abo-abo/swiper], (vertico)[https://github.com/minad/vertico], (mct)[https://git.sr.ht/~protesilaos/mct], or just the standard icomplete.
 

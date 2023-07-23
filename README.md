@@ -16,13 +16,13 @@ I run the completion query using `(apropos ".*")`. If I need to do something els
    :type git
    :host github
    :repo "enzuru/completing-read-geiser"))
+(require 'completing-read-geiser)
 
 (define-key scheme-mode-map (kbd "C-h s") 'completing-read-geiser-describe-symbol)
 (define-key geiser-repl-mode-map (kbd "C-h s") 'completing-read-geiser-describe-symbol)
-(require 'completing-read-geiser)
 ```
 
-## Using with Ivy
+### Using with Ivy
 
 ```lisp
 (setf completing-read-function #'ivy-completing-read)

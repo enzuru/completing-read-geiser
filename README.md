@@ -2,7 +2,7 @@
 
 This is a simple package that provides `completing-read` for Geiser symbols. When a symbol is selected, a definition of the symbol is shown using Geiser.
 
-Use the completion framework of your choice, whether (ivy)[https://github.com/abo-abo/swiper], (vertico)[https://github.com/minad/vertico], (mct)[https://git.sr.ht/~protesilaos/mct], or just the standard icomplete.
+Use the completion framework of your choice, whether [ivy](https://github.com/abo-abo/swiper), [vertico](https://github.com/minad/vertico), [mct](https://git.sr.ht/~protesilaos/mct), or just the standard icomplete.
 
 I have only tested this with Guile, as that is the only Scheme distribution that I use.
 

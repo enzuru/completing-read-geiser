@@ -6,7 +6,7 @@
 ;; Keywords: lisp matching tools
 
 ;; Package-Version: 1.0.0
-;; Package-Requires: ((emacs "24.4") (geiser "0.28.2"))
+;; Package-Requires: ((emacs "24.4") (geiser "0.28"))
 
 ;; SPDX-License-Identifier: GPL-3.0
 
@@ -34,7 +34,8 @@
 (defun completing-read-geiser ()
   "Get list of symbols available in your Geiser session"
   (interactive)
-  (geiser-doc-symbol (make-symbol (completing-read "Look up symbol in Geiser" (completing-read-geiser-search)))))
+  (geiser-doc-symbol
+   (make-symbol (completing-read "Look up symbol in Geiser: " (completing-read-geiser-search)))))
 
 (provide 'completing-read-geiser)
 

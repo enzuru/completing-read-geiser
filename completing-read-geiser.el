@@ -35,7 +35,8 @@
   "Get list of symbols available in your Geiser session."
   (interactive)
   (geiser-doc-symbol
-   (make-symbol (completing-read "Look up symbol in Geiser: " (completing-read-geiser-search)))))
+   (make-symbol (completing-read "Look up symbol in Geiser: "
+                                 (completing-read-geiser-search)))))
 
 (provide 'completing-read-geiser)
 

@@ -27,7 +27,3 @@ I run the completion query using `(apropos ".*")`. If I need to do something els
 ```lisp
 (setq completing-read-function #'ivy-completing-read)
 ```
-
-## License
-
-Licensed under the GPLv3; copyright is assigned to my eponymous charity [enzu.ru](https://enzu.ru)

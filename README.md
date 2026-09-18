@@ -27,3 +27,7 @@ I run the completion query using `(apropos ".*")`. If I need to do something els
 ```lisp
 (setq completing-read-function #'ivy-completing-read)
 ```
+
+## License
+
+This package is free software under the GNU General Public License, version 3 or any later version. See [LICENSE](LICENSE) for the full text.
